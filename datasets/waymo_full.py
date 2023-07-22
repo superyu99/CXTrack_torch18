@@ -34,7 +34,7 @@ class WaymoFull(BaseDataset):
 
         assert cfg.category_name in ['Vehicle', 'Pedestrian']
         bench_dir = osp.join(cfg.data_root_dir, 'benchmark',
-                             'validation', cfg.category_name.lower())
+                              cfg.category_name.lower())
         self.bench = json.load(open(osp.join(bench_dir, 'bench_list.json')))
 
         def extract_ids_from_bench(bench_name):

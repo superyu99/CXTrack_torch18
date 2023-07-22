@@ -2,7 +2,7 @@
 
 dataset_cfg:
   dataset_type: WaymoFull
-  data_root_dir: data/waymo_sot/
+  data_root_dir: /data/public_dataset/waymo/tracking
   category_name: Vehicle
   search_npts: 1024
   search_offset: 2.0
